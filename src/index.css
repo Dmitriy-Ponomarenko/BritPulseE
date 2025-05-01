@@ -1,3 +1,5 @@
+@import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+@import "react-pdf/dist/esm/Page/TextLayer.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,6 @@
 /* Custom Flipbook Styles */
 .flipbook {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  overflow: visible; /* Ensures animations are fully visible */
 }
 
 /* Background Gradient */

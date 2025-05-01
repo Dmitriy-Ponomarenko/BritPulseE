@@ -24,7 +24,7 @@ const Pages = forwardRef<HTMLDivElement, PagesProps>((props, ref) => {
       }}
     >
       <h2 className="text-lg font-bold text-gray-800">Page {props.number}</h2>
-      <p className="text-gray-600">{props.children}</p>
+      <div className="text-gray-600">{props.children}</div>
     </div>
   );
 });
