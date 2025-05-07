@@ -54,7 +54,7 @@ const Flipbook: React.FC = () => {
         }}
         size="stretch"
         startPage={0}
-        showCover={false}
+        showCover={true}
         mobileScrollSupport={true}
         minWidth={200}
         maxWidth={800}
