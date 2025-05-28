@@ -27,12 +27,12 @@ function Flipbook() {
         <>
 
             <div className='h-screen w-screen flex flex-col gap-5 justify-center items-center bg-gray-900 overflow-hidden'>
-                <HTMLFlipBook width={400} height={570} >
+                <HTMLFlipBook width={400} height={570} showCover={true}>
                     {
                         [...Array(numPages).keys()].map((pNum) => (
                             <Pages key={pNum} number={pNum + 1}>
                                 <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                                    <Page pageNumber={pNum} width={400} renderAnnotationLayer={false} renderTextLayer={false} />
+                                    <Page pageNumber={pNum + 1} width={400} renderAnnotationLayer={false} renderTextLayer={false} />
                                 </Document>
                             </Pages>
                         ))
